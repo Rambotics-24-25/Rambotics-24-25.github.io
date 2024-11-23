@@ -1,0 +1,69 @@
+/* Elements */
+
+li {font-size: 24px;}
+
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+  background-color: rgb(240, 240, 240);
+}
+th {border: 1px solid;}
+td {border: 1px solid; padding-left: 0.5em; padding-right: 0.5em;}
+tr {border: 1px solid;}
+
+/* Data */
+
+.dataBack {
+  background-color: rgb(192, 192, 192);
+  border: 0.125rem solid rgb(0, 0, 0);
+  height: 1rem;
+  position: relative;
+}
+
+.dataBar {
+  background-color: rgb(128, 128, 128);
+  height: 1rem;
+  width: 100%;
+}
+
+.dataBttn {
+  background-color: rgb(240, 240, 240);
+  width: 3rem;
+  height: 3rem;
+  
+  line-height: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  
+  border-radius: 0.5rem;
+  border-width: 0;
+  
+  cursor: pointer;
+}
+
+.dataBttn:active {
+  background-color: rgb(224, 224, 224);
+}
+
+.warn {
+  display: none;
+  position: absolute;
+  
+  left: calc(0% - 1rem);
+  top: -1rem;
+  
+  font-size: 2rem;
+  transition: rotate 1s;
+}
+
+.BOOM {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  
+  left: calc(100% - 2rem);
+  top: -2rem;
+  
+  font-size: 4rem;
+  transition: rotate 5s, opacity 1s;
+}
