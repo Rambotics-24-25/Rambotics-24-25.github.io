@@ -1,6 +1,6 @@
 /* :P */
 
-* {transition: rotate 5s linear;}
+* {transition: rotate 10s linear;}
 
 /* Elements */
 
@@ -8,12 +8,10 @@ body {
   margin: auto;
   margin-top: 1em;
   width: 70%;
-  background-color: rgb(224, 160, 244);
-  background-image: linear-gradient(135deg, rgb(224, 192, 255), rgb(224, 128, 244)),
-                    linear-gradient(90deg, rgb(224, 192, 255), rgb(224, 128, 244));
-  background-position: 0vw 0vw, 100vw 50vw;
-  background-size: 100vw 100vw, 200vw 100vw;
-  background-repeat: no-repeat, repeat;
+  
+  background-color: rgb(64, 64, 64);
+  
+  position: relative;
 }
 
 h1 {text-align: center;}
@@ -75,15 +73,6 @@ div.navArrow {
   position: relative;
   overflow-y: hidden;
   transition: max-height 1s;
-}
-
-/* Animated Button */
-
-.imgButton {
-  border: 0;
-  padding: 0;
-  height: 128px;
-  cursor: grab;
 }
 
 /* Media */

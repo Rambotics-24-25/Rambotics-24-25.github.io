@@ -4,6 +4,12 @@ const headHTML = `
   `;
 
 const bodyHTML = `
+  <div class="navigation">
+    
+    <a class="nav" title="H/h" href="index.html">Home</a>
+    <a class="nav" title="" href="test.html">test</a>
+    
+  </div>
   `;
 
 // Variables and Constants
@@ -60,6 +66,29 @@ function expndOrClps(ID, bttnID) {
   
 }
 
+function toggleTOC() {
+  
+  let content = document.getElementsByClassName('content')[0];
+  let TOC = document.getElementsByClassName('TOC')[0];
+  let TOCBttn = document.getElementsByClassName('TOCBttn')[0];
+  
+  width = "" + (TOC.scrollWidth + 100) + "px";
+  
+  if(TOC.style.maxWidth ==  "0px") {
+    
+    TOC.style.maxWidth = width;
+    TOCBttn.style.transform = "rotate(0deg)";
+    
+  }
+  else {
+    
+    TOC.style.maxWidth = "0px";
+    TOCBttn.style.transform = "rotate(270deg)";
+    
+  }
+  
+}
+
 // Set Elements
 
 for(let i = 0; i < head.length; i++) head[i].innerHTML += headHTML;
@@ -91,18 +120,24 @@ function loadSpin(){
 }
 
 function spin() {
-  rotate += 180;
+  rotate += 360;
   
   for(let i = 0; i < elems.length; i ++) elems[i].style.rotate = '' + rotate + 'deg';
 }
 
 document.addEventListener('keypress', function() {
-    if(event.key == trigger && run) {
-        run = false;
-        spin();
-        window.setTimeout(spin, 5 * 1000);
-        window.setTimeout(function runTrue(){
-            run = true;
-        }, 5 * 1000 * 2);
-    }
+  
+  // Navigation
+  
+  shortcut("q", "Q", "index.html");
+  
+  // :P
+
+  if(event.key == trigger && run) {
+    run = false;
+    spin();
+    window.setTimeout(function () {
+      run = true;
+    }, 10 * 1000);
+  }
 });
