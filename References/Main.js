@@ -7,7 +7,7 @@ const bodyHTML = `
   <div class="navigation">
     
     <a class="nav" title="H/h" href="index.html">Home</a>
-    <a class="nav" title="" href="test.html">test</a>
+    <a class="nav" title="" href="About.html">About Us</a>
     
   </div>
   `;
@@ -129,7 +129,7 @@ document.addEventListener('keypress', function() {
   
   // Navigation
   
-  shortcut("q", "Q", "index.html");
+  shortcut("h", "H", "index.html");
   
   // :P
 

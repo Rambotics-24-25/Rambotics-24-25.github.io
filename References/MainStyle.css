@@ -9,17 +9,18 @@ body {
   margin-top: 1em;
   width: 70%;
   
-  background-color: rgb(64, 64, 64);
+  background-color: rgb(240, 240, 240);
   
   position: relative;
 }
 
 h1 {text-align: center;}
+h2 {text-align: center;}
 
 p {text-indent: 2rem; font-size: 18px}
 
-a {color: rgb(0, 96, 0);}
-a:hover {color: rgb(0, 128, 0);}
+a {color: rgb(128, 96, 0); font-size: 18px;}
+a:hover {color: rgb(192, 128, 0);}
 
 img {
   image-rendering: auto;
@@ -28,10 +29,15 @@ img {
 
 /* Navigation */
 
-.navigation {text-align: center;}
+.navigation {
+  position: sticky;
+  top: 0;
+  background-color: rgba(240, 240, 240, 1);
+  text-align: center;
+}
 
 .nav, .navArrow {
-  background-color: rgb(128, 208, 128);
+  background-color: rgb(255, 192, 0);
   color: rgb(0, 0, 0);
   padding: 0.25em;
   margin: 0.1em;
@@ -43,7 +49,7 @@ img {
 }
 
 a.nav:hover, a.nav:active, a.navArrow:hover, a.navArrow:active {
-  background-color: rgb(128, 192, 128);
+  background-color: rgb(192, 128, 0);
   color: rgb(0, 0, 0);
 }
 
@@ -55,10 +61,12 @@ a.nav:hover, a.nav:active, a.navArrow:hover, a.navArrow:active {
 }
 
 div.navArrow {
-  background-color: rgb(160, 192, 160);
+  background-color: rgb(192, 128, 0);
   color: rgb(128, 128, 128);
   cursor: not-allowed;
 }
+
+/* Sect */
 
 .sectBttn {
   text-align: center;
@@ -73,6 +81,13 @@ div.navArrow {
   position: relative;
   overflow-y: hidden;
   transition: max-height 1s;
+}
+
+/* Flex */
+
+.cont {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Media */
