@@ -22,11 +22,6 @@ p {text-indent: 2rem; font-size: 18px}
 a {color: rgb(128, 96, 0); font-size: 18px;}
 a:hover {color: rgb(192, 128, 0);}
 
-img {
-  image-rendering: auto;
-  image-rendering: pixelated;
-}
-
 /* Navigation */
 
 .navigation {
@@ -85,16 +80,42 @@ div.navArrow {
 
 /* Flex */
 
-.cont {
+.horzImgText {
   display: flex;
   justify-content: space-around;
+}
+
+.centerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapAround {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrapAround > div {
+  margin: 1rem;
+}
+
+/* Other */
+
+.caption {
+  text-align: center;
 }
 
 /* Media */
 
 @media (max-width: 600px) {
   body {
-    width: 80%;
+    width: 90%;
+  }
+  .horzImgText {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
