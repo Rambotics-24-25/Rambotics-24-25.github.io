@@ -105,11 +105,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // :P
 
-document.addEventListener('keypress', function() {
-  let key = event.keyCode || event.charCode;
-  if(key == 33) window.alert('Hello!');
-});
-
 let elems = [];
 let rotate = 0;
 let run = true;

@@ -1,3 +1,11 @@
+/* Variables */
+
+:root {
+  --navColor: rgb(240, 192, 64);
+  --navHovColor: rgb(208, 160, 0);
+  --subHeader: rgb(224, 176, 0);
+}
+
 /* :P */
 
 * {transition: rotate 10s linear;}
@@ -12,39 +20,54 @@ body {
   background-color: rgb(240, 240, 240);
   
   position: relative;
+  
+  color: rgb(0, 0, 0);
 }
 
-h1 {text-align: center;}
-h2 {text-align: center;}
+h1 {
+  text-align: center;
+  background-color: var(--navColor);
+  
+  border-radius: 0.5rem;
+}
+h2 {
+  text-align: center;
+  background-color: var(--subHeader);
+  
+  border-radius: 0.5rem;
+}
 
-p {text-indent: 2rem; font-size: 18px}
+p {text-indent: 2em; font-size: 18px}
 
-a {color: rgb(128, 96, 0); font-size: 18px;}
-a:hover {color: rgb(192, 128, 0);}
+a {color: var(--navHovColor); font-size: 18px;}
+a:hover {color: var(--navColor);}
 
 /* Navigation */
 
 .navigation {
   position: sticky;
   top: 0;
-  background-color: rgba(240, 240, 240, 1);
-  text-align: center;
+  background-color: rgb(240, 240, 240);
+  text-align: left;
+  
+  z-index: 1;
 }
 
 .nav, .navArrow {
-  background-color: rgb(255, 192, 0);
+  background-color: var(--navColor);
   color: rgb(0, 0, 0);
   padding: 0.25em;
   margin: 0.1em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 24px;
   cursor: pointer;
+  border-radius: 0.5rem;
 }
 
 a.nav:hover, a.nav:active, a.navArrow:hover, a.navArrow:active {
-  background-color: rgb(192, 128, 0);
+  background-color: var(--navHovColor);
   color: rgb(0, 0, 0);
 }
 
@@ -56,7 +79,7 @@ a.nav:hover, a.nav:active, a.navArrow:hover, a.navArrow:active {
 }
 
 div.navArrow {
-  background-color: rgb(192, 128, 0);
+  background-color: var(--navHovColor);
   color: rgb(128, 128, 128);
   cursor: not-allowed;
 }
@@ -85,6 +108,8 @@ div.navArrow {
   justify-content: space-around;
   
   width: 100%;
+  
+  margin: 1rem
 }
 
 .centerColumn {
@@ -93,6 +118,8 @@ div.navArrow {
   align-items: center;
   
   width: 100%;
+  
+  margin: 1rem;
 }
 
 .wrapAround {
@@ -101,6 +128,8 @@ div.navArrow {
   justify-content: center;
   
   width: 100%;
+  
+  margin: 1rem;
 }
 
 .wrapAround > div {
