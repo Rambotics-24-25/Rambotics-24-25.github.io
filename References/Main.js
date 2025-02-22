@@ -8,6 +8,7 @@ const bodyHTML = `
     
     <a class="nav" title="H/h" href="index.html">Home</a>
     <a class="nav" title="" href="About.html">About Us</a>
+    <a class="nav" title="" href="SignUp.html">Sign Up</a>
     
   </div>
   `;
