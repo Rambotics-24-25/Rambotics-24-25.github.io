@@ -6,9 +6,10 @@ const headHTML = `
 const bodyHTML = `
   <div class="navigation">
     
-    <a class="nav" title="H/h" href="index.html">Home</a>
-    <a class="nav" title="" href="About.html">About Us</a>
-    <a class="nav" title="" href="SignUp.html">Sign Up</a>
+    <a class="nav" title="[1]" href="index.html">Home</a>
+    <a class="nav" title="[2]" href="about.html">About Us</a>
+    <a class="nav" title="[3]" href="robots.html">Robots</a>
+    <a class="nav" title="[6]" href="signUp.html">Sign Up</a>
     
   </div>
   `;
@@ -125,7 +126,10 @@ document.addEventListener('keypress', function() {
   
   // Navigation
   
-  shortcut("h", "H", "index.html");
+  shortcut("1", "1", "index.html");
+  shortcut("2", "2", "about.html");
+  shortcut("3", "3", "robots.html");
+  shortcut("6", "6", "signUp.html");
   
   // :P
 

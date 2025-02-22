@@ -42,6 +42,10 @@ p {text-indent: 2em; font-size: 18px}
 a {color: var(--navHovColor); font-size: 18px;}
 a:hover {color: var(--navColor);}
 
+li {
+  font-size: 18px;
+}
+
 /* Navigation */
 
 .navigation {
