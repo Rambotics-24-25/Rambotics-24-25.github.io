@@ -9,6 +9,8 @@ const bodyHTML = `
     <a class="nav" title="[1]" href="index.html">Home</a>
     <a class="nav" title="[2]" href="about.html">About Us</a>
     <a class="nav" title="[3]" href="robots.html">Robots</a>
+    <a class="nav" title="[4]" href="comps.html">Competitions</a>
+    <a class="nav" title="[5]" href="events.html">Other Events</a>
     <a class="nav" title="[6]" href="signUp.html">Sign Up</a>
     
   </div>
@@ -129,6 +131,8 @@ document.addEventListener('keypress', function() {
   shortcut("1", "1", "index.html");
   shortcut("2", "2", "about.html");
   shortcut("3", "3", "robots.html");
+  shortcut("4", "4", "comps.html");
+  shortcut("5", "5", "events.html");
   shortcut("6", "6", "signUp.html");
   
   // :P

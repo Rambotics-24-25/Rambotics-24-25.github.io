@@ -138,6 +138,11 @@ div.navArrow {
 
 .wrapAround > div {
   margin: 1rem;
+  width: 20rem;
+}
+
+.wrapAround > div > img {
+  width: 100%;
 }
 
 /* Other */
